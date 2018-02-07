@@ -1,1 +1,1 @@
-# cu-lunch
+# cu@lunch
