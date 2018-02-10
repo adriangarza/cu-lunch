@@ -1,0 +1,30 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#main-container {
+    max-width: 50%;
+    padding: 2em;
+}
+
+
+.mdc-select, .mdc-text-field {
+    width: 100%;
+}
+
+#year-select {
+    margin-top: 1em;
+}

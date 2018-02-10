@@ -7,37 +7,37 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body class="mdc-typography">
+<div id="main-container" class="mdc-card">
 	<!-- title and register/login form -->
 	<h1 class="mdc-typography--display3">CU@Lunch</h1>
+    <nav id="basic-tab-bar" class="mdc-tab-bar" data-mdc-auto-init="MDCTabBar">
+      <a class="mdc-tab mdc-tab--active" href="#register">Register</a>
+      <a class="mdc-tab" href="#login">Login</a>
+      <span class="mdc-tab-bar__indicator"></span>
+    </nav>
 
 	<!-- text input -->
-	<section class="firstname">
+    <div id="register">
 		<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
 	      <input type="text" class="mdc-text-field__input" id="firstname" required>
 	      <label for="firstname" class="mdc-text-field__label">First Name</label>
 	      <div class="mdc-line-ripple"></div>
 	    </div>
-	</section>
 
 	<!-- text input -->
-	<section class="lastname">
 		<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
 	      <input type="text" class="mdc-text-field__input" id="lastname" required>
 	      <label for="lastname" class="mdc-text-field__label">Last Name</label>
 	      <div class="mdc-line-ripple"></div>
 	    </div>
-	</section>
 
 	<!-- text input -->
-	<section class="uni">
 		<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
 	      <input type="text" class="mdc-text-field__input" id="uni" required>
 	      <label for="uni" class="mdc-text-field__label">UNI</label>
 	      <div class="mdc-line-ripple"></div>
 	    </div>
-	</section>
 
-	<section class="password">
 	    <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
 	      <input type="password" class="mdc-text-field__input" id="pw" required minlength=8>
 	      <label for="pw" class="mdc-text-field__label">Choose Password</label>
@@ -46,10 +46,7 @@
 	    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg" role="alert">
 	          Must be at least 8 characters long
 	    </p>
-	</section>
 
-	<!-- radio buttons -->
-    <section class="school">
         <div class="mdc-select" role="listbox" id="school-select" data-mdc-auto-init="MDCSelect">
           <div class="mdc-select__surface" tabindex="0">
             <div class="mdc-select__label">School</div>
@@ -67,10 +64,7 @@
             </ul>
           </div>
         </div>
-    </section>
 
-
-    <section class="year">
         <div class="mdc-select" role="listbox" id="year-select" data-mdc-auto-init="MDCSelect">
           <div class="mdc-select__surface" tabindex="0">
             <div class="mdc-select__label">Year</div>
@@ -94,15 +88,21 @@
             </ul>
           </div>
         </div>
-    </section>
 
-	<!-- text area -->
-	<section class="description">
+        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+          <input type="text" class="mdc-text-field__input" id="desc" required maxlength="120">
+          <label for="uni" class="mdc-text-field__label">Short Description</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+    </div>
 
-	</section>
+    <div id="login">
+
+    </div>
 
     <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
     <script src="script.js"></script>
+</div>
 </body>
 
  </html>
