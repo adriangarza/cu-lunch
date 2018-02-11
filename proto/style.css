@@ -1,5 +1,3 @@
-
-
 html, body {
     margin: 0;
     padding: 0;
@@ -18,13 +16,29 @@ body {
 #main-container {
     max-width: 50%;
     padding: 2em;
+    animation: fade-in .5s;
 }
 
+@keyframes fade-in {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
 
-.mdc-select, .mdc-text-field {
-    width: 100%;
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-#year-select {
-    margin-top: 1em;
+h1, h2, h3 {
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+#bio {
+    resize: none;
 }
