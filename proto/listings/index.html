@@ -2,257 +2,178 @@
 <html>
 
 <head>
-    <!-- Bootstrap links -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/kybarg/mdl-selectfield/mdl-menu-implementation/mdl-selectfield.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"> </script>
     <!-- our css -->
-    <link rel="stylesheet" type="text/css" href="listings.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>All Postings | CU@Lunch</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <span class="col-md-4">
-            	<div class="panel panel-default">
-                	<div>
-                          <table class="table table-user-information">
-                            <tbody>
-                              <tr>
-                                <td>Charity:</td>
-                                <td>Microsoft</td>
-                              </tr>
-                              <tr>
-                                <td>Address:</td>
-                                <td>1355 Market St, San Francisco, CA 94103</td>
-                              </tr>
-                              <tr>
-                                <td>Ratings:</td>
-                                <td>5/5</td>
-                              </tr>
-                                <td>Website:</td>
-                                <td>www.microsoft.com</td>
-                              <tr>
-                                <td>Email:</td>
-                                <td><a href="mailto:microsoft@microsoft.com">microsoft@microsoft.com</a></td>
-                              </tr>
-                                <td>Phone Number:</td>
-                                <td>1-805-111-1111</td>
-                              </tr>
-
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-            </span>
-            <span class='col-md-8' >
-                <ul id="post-container">
-                  
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>os;fuieh</p>
-                                    <p class='post-donor'> Microsoft</p>
-                                    <p>sdfsdf</p>
-                                    <div class='post-description'>sdf</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          sdf
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: 1231231231</p>
-                                     <br>
-                                     <p class='post-contact'> 23123-12-31 12:31 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=glendale%2C%20ca&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>Gitstravaganza</p>
-                                    <p class='post-donor'> Github</p>
-                                    <p>300-400 sandwiches, 200-300 chips</p>
-                                    <div class='post-description'>The biggest oct...</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          The biggest octocat themed party of the century. We will have potentially hundreds of extra meals
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: 7805493898</p>
-                                     <br>
-                                     <p class='post-contact'> 2017-07-16 17:00 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=Mission%20Dolores%20Park%2C%20Dolores%20St%20%26%2019th%20St%2C%20San%20Francisco%2C%20CA%2094114&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>Xbox Air Release Party</p>
-                                    <p class='post-donor'> Microsoft</p>
-                                    <p>70 swirls of gum drops, 10-100 metric tons of cotton candy</p>
-                                    <div class='post-description'>We are hiring 2...</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          We are hiring 20 different vendors from across the tristate area and plan to have enough food even if every intern in San Francisco showed up to party.
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: 4382748104</p>
-                                     <br>
-                                     <p class='post-contact'> 2020-08-02 03:00 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=Central%20Park%2C%20New%20York&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>Code 2040 Hackathon</p>
-                                    <p class='post-donor'> Github</p>
-                                    <p>100lbs of oatmeal </p>
-                                    <div class='post-description'>After a great e...</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          After a great event, we overestimate how much people wanted oatmeal
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: 6614762102</p>
-                                     <br>
-                                     <p class='post-contact'> 2017-07-17 15:00 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=88%20Colin%20P%20Kelly%20Jr%20St%2C%20San%20Francisco%2C%20CA%2094107&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>Zynga&#39;s Happy Hour</p>
-                                    <p class='post-donor'> Zynga</p>
-                                    <p>10-20 lbs of bacon, 30 pieces of avocado toast</p>
-                                    <div class='post-description'>For Zynga&#39;s 10t...</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          For Zynga&#39;s 10th anniversary, there will be a major event with the potential for mounts of leftover food 
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: (800) 762-2530</p>
-                                     <br>
-                                     <p class='post-contact'> 2017-07-19 20:00 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=699%208th%20St%2C%20San%20Francisco%2C%20CA%2094103&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                   <li>
-                        <div class="panel panel-default posting" onclick="expandPost(this);">
-                            <div class="panel-body">
-                                <span class='col-md-8'>
-                                    <p class='post-name'>Burritos</p>
-                                    <p class='post-donor'> Zynga</p>
-                                    <p>10 </p>
-                                    <div class='post-description'>Veggie Burritos</div>
-                                    <div class="panel-hidden">
-                                        <br>
-                                        <div class="post-description-expanded">
-                                          Veggie Burritos
-                                        </div>
-                                    </div>
-                                </span>
-                                <span class='col-md-4'>
-                                    <br>
-                                     <p class='post-contact'> Contact at: 333-444-5555</p>
-                                     <br>
-                                     <p class='post-contact'> 2017-01-01 13:00 </p>
-                                     <br>
-                                </span>
-
-                                <div class='panel-hidden'>
-                                <br>
-                                  
-                                  <iframe src=https://www.google.com/maps/embed/v1/place?q=20%20Fell%20st.%20&amp;zoom=17&amp;key=AIzaSyC2m6JBE6EvL3t4AqWUeDqRN3FALo8yuw4 class='map' height='300px' frameborder="0"></iframe>
-                                </div>
-                            <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </span>
-        </div>
+<div class="mdl-layout mdl-js-layout dotbg">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Hi, Adrian</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Settings</a>
+        <a class="mdl-navigation__link" href="">Logout</a>
+      </nav>
     </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Navigation</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">My Profile</a>
+      <a class="mdl-navigation__link" href="">All Listings</a>
+      <a class="mdl-navigation__link" href="">Settings</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
 
+    <div class="container mdl-grid">
 
+      <div class='mdl-cell mdl-cell--4-col'></div>
+
+      <div class='mdl-cell mdl-cell--4-col' >
+          <ul id="post-container">
+             <li>
+                <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
+                  <div class="mdl-card__title bg1">
+                    <h2 class='mdl-card__title-text'>Wednesday, 12:30 PM</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text post-description">
+                    Offered by: Adrian Garza
+                  </div>
+                  <div class="panel-hidden">
+                    <div class="personal-info">
+                      <div class="profile-container"><img src="../img/adrian.jpg"></div>
+                      <div class="mdl-card__supporting-text info-list">
+                        <h3>Adrian Garza</h3>
+                        <p><b>School: </b>Columbia College</p>
+                        <p><b>Year: </b>Senior</p>
+                        <p><b>Interests: </b>Running, hiking, complaining about things</p>
+                        <p><b>Bio: </b>I'm a second-semester senior who has completed all his core requirements like a good boy</p>
+                      </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="mailto:ahg2142@columbia.edu">
+                          ahg2142@columbia.edu
+                        </a>
+                    </div>
+                  </div>
+
+                  <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
+                </div>
+              </li>
+
+              <li>
+                <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
+                  <div class="mdl-card__title bg2">
+                    <h2 class='mdl-card__title-text'>Thursday, 11:55 PM</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text post-description">
+                    Offered by: Red-Hot Bellyman
+                  </div>
+                  <div class="panel-hidden">
+                    <div class="personal-info">
+                      <div class="profile-container"><img src="man2.jpg"></div>
+                      <div class="mdl-card__supporting-text info-list">
+                        <h3>Red-Hot Bellyman</h3>
+                        <p><b>School: </b>General Studies</p>
+                        <p><b>Year: </b>Extreme Senior</p>
+                        <p><b>Interests: </b>Flexing, competitive eating</p>
+                        <p><b>Bio: </b>I got fired from my job as an arbys santa yesterday. Just looking for other cool, like-minded people who also worked as arbys santas.</p>
+                      </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="mailto:ahg2142@columbia.edu">
+                          rhb1209@columbia.edu
+                        </a>
+                    </div>
+                  </div>
+
+                  <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
+                </div>
+              </li> 
+
+              <li>
+                <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
+                  <div class="mdl-card__title bg3">
+                    <h2 class='mdl-card__title-text'>Friday, 9:30 AM</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text post-description">
+                    Offered by: Chunk
+                  </div>
+                  <div class="panel-hidden">
+                    <div class="personal-info">
+                      <div class="profile-container"><img src="man.jpg"></div>
+                      <div class="mdl-card__supporting-text info-list">
+                        <h3>Chunk</h3>
+                        <p><b>School: </b>SEAS</p>
+                        <p><b>Year: </b>Freshman</p>
+                        <p><b>Interests: </b>Power posing in front of Hartley</p>
+                        <p><b>Bio: </b>After my morning workout, I like to share breakfast with someone before my afternoon workout.</p>
+                      </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="mailto:ahg2142@columbia.edu">
+                          lump@columbia.edu
+                        </a>
+                    </div>
+                  </div>
+
+                  <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
+                </div>
+              </li> 
+
+              <li>
+                <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
+                  <div class="mdl-card__title bg4">
+                    <h2 class='mdl-card__title-text'>Saturday, 2:45 PM</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text post-description">
+                    Offered by: Ted Cruz
+                  </div>
+                  <div class="panel-hidden">
+                    <div class="personal-info">
+                      <div class="profile-container"><img src="man3.jpg"></div>
+                      <div class="mdl-card__supporting-text info-list">
+                        <h3>Ted Cruz</h3>
+                        <p><b>School: </b>Barnard</p>
+                        <p><b>Year: </b>Sophomore</p>
+                        <p><b>Interests: </b>Chasing down and eating rats, politics, pretending to be a human</p>
+                        <p><b>Bio: </b>Mother promised me a bowl of tapioca if I swiped someone into JJs</p>
+                      </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="mailto:ahg2142@columbia.edu">
+                          tcruz@barnard.edu
+                        </a>
+                    </div>
+                  </div>
+
+                  <i class="material-icons bottomright expander" onclick="contractPost(this);">expand_more</i>
+                </div>
+              </li>              
+          </ul>
+      </div>
+
+      <div class='mdl-cell mdl-cell--4-col'></div>
+
+    </div>
+  </main>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-
-
     <script src="listings.js"></script>
 </body>
 
