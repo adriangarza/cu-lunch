@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"> </script>
-    <!-- our css -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>All Postings | CU@Lunch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>All Postings | CU@Lunch</title>
 </head>
 
 <body>
@@ -22,8 +21,6 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Settings</a>
         <a class="mdl-navigation__link" href="">Logout</a>
       </nav>
@@ -35,20 +32,48 @@
       <a class="mdl-navigation__link" href="">My Profile</a>
       <a class="mdl-navigation__link" href="">All Listings</a>
       <a class="mdl-navigation__link" href="">Settings</a>
-      <a class="mdl-navigation__link" href="">Link</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
 
     <div class="container mdl-grid">
 
-      <div class='mdl-cell mdl-cell--4-col'></div>
+      <div class='mdl-cell mdl-cell--3-col'></div>
 
-      <div class='mdl-cell mdl-cell--4-col' >
+      <div class='mdl-cell mdl-cell--6-col' >
           <ul id="post-container">
-             <li>
+            <li>
+                <div class="mdl-card mdl-shadow--2dp posting-title">
+                  <div class="mdl-card__title">
+                    <h2 class='mdl-card__title-text'>All Listings</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text post-description">
+                    Filter by:
+                    <form class="filter-form" action="#">
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="name">
+                        <label class="mdl-textfield__label" for="name">Student Name</label>
+                      </div>
+
+                      <div>
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sameyear">
+                          <input type="checkbox" id="sameyear" class="mdl-checkbox__input">
+                          <span class="mdl-checkbox__label">Only My Year</span>
+                        </label>
+                      </div>
+                      <br>
+                      <div>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="register-button">
+                      Search
+                  </button>
+                </div>
+              </li>
+              <li>
                 <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
-                  <div class="mdl-card__title bg1">
+                  <div class="mdl-card__title lunch">
                     <h2 class='mdl-card__title-text'>Wednesday, 12:30 PM</h2>
                   </div>
                   <div class="mdl-card__supporting-text post-description">
@@ -56,7 +81,6 @@
                   </div>
                   <div class="panel-hidden">
                     <div class="personal-info">
-                      <div class="profile-container"><img src="../img/adrian.jpg"></div>
                       <div class="mdl-card__supporting-text info-list">
                         <h3>Adrian Garza</h3>
                         <p><b>School: </b>Columbia College</p>
@@ -78,17 +102,16 @@
 
               <li>
                 <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
-                  <div class="mdl-card__title bg2">
+                  <div class="mdl-card__title dinner">
                     <h2 class='mdl-card__title-text'>Thursday, 11:55 PM</h2>
                   </div>
                   <div class="mdl-card__supporting-text post-description">
-                    Offered by: Red-Hot Bellyman
+                    Offered by: Hob
                   </div>
                   <div class="panel-hidden">
                     <div class="personal-info">
-                      <div class="profile-container"><img src="man2.jpg"></div>
                       <div class="mdl-card__supporting-text info-list">
-                        <h3>Red-Hot Bellyman</h3>
+                        <h3>Hob</h3>
                         <p><b>School: </b>General Studies</p>
                         <p><b>Year: </b>Extreme Senior</p>
                         <p><b>Interests: </b>Flexing, competitive eating</p>
@@ -108,7 +131,7 @@
 
               <li>
                 <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
-                  <div class="mdl-card__title bg3">
+                  <div class="mdl-card__title breakfast">
                     <h2 class='mdl-card__title-text'>Friday, 9:30 AM</h2>
                   </div>
                   <div class="mdl-card__supporting-text post-description">
@@ -116,7 +139,6 @@
                   </div>
                   <div class="panel-hidden">
                     <div class="personal-info">
-                      <div class="profile-container"><img src="man.jpg"></div>
                       <div class="mdl-card__supporting-text info-list">
                         <h3>Chunk</h3>
                         <p><b>School: </b>SEAS</p>
@@ -138,7 +160,7 @@
 
               <li>
                 <div class="mdl-card mdl-shadow--2dp posting" onclick="expandPost(this);">
-                  <div class="mdl-card__title bg4">
+                  <div class="mdl-card__title lunch">
                     <h2 class='mdl-card__title-text'>Saturday, 2:45 PM</h2>
                   </div>
                   <div class="mdl-card__supporting-text post-description">
@@ -146,7 +168,6 @@
                   </div>
                   <div class="panel-hidden">
                     <div class="personal-info">
-                      <div class="profile-container"><img src="man3.jpg"></div>
                       <div class="mdl-card__supporting-text info-list">
                         <h3>Ted Cruz</h3>
                         <p><b>School: </b>Barnard</p>
@@ -168,7 +189,7 @@
           </ul>
       </div>
 
-      <div class='mdl-cell mdl-cell--4-col'></div>
+      <div class='mdl-cell mdl-cell--3-col'></div>
 
     </div>
   </main>
