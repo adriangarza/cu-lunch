@@ -31,3 +31,14 @@ body {
 .redbg {
   background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
 }
+
+form {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#bio {
+    resize: none;
+}
